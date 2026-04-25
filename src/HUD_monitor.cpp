@@ -18,17 +18,31 @@ const float WARNING_DEPTH_METERS = 40.0;
 class AbyssalHUD {
 private:
     float currentTemp;
+    float previousTemp;
     float currentDepth;
     bool systemCritical;
 
 public:
-    AbyssalHUD() : currentTemp(OPTIMAL_TEMP_C), currentDepth(0.0), systemCritical(false) {}
+    AbyssalHUD() : currentTemp(OPTIMAL_TEMP_C), previousTemp(OPTIMAL_TEMP_C), currentDepth(0.0), systemCritical(false) {}
 
     // Simulating sensor data ingestion
     void updateTelemetry(float temp, float depth) {
+        previousTemp = currentTemp;
         currentTemp = temp;
         currentDepth = depth;
+        predictiveAnalysis();
         analyzeState();
+    }
+
+    void predictiveAnalysis() {
+        float tempDelta = currentTemp - previousTemp;
+
+        // If temperature rises more than 5 degrees between telemetry updates, predict a spike
+        if (tempDelta >= 5.0) {
+            std::cout << "[PREDICTIVE ALERT] Temperature rising rapidly (+" << tempDelta << "°C). Activating active microfluidic cooling!" << std::endl;
+        } else if (tempDelta >= 2.5) {
+            std::cout << "[PREDICTIVE ADVISORY] Metabolic exertion increasing. Passive cooling nominal." << std::endl;
+        }
     }
 
     void analyzeState() {
