@@ -36,3 +36,13 @@ The cross-linking density is the critical variable. If it is too low, the hydrog
 ### 3.3 Encapsulation Protocol
 *   **Pre-Polymerization Placement:** The monomer/cross-linker solution is injected into the cavity between the inner polycarbonate shell and the outer semi-permeable membrane.
 *   **In-Situ Polymerization:** UV or thermal initiation is used to polymerize the matrix *in situ*, ensuring perfect geometric conformity to the helmet shell without voids.
+
+## 4. Nanocomposite Reinforcement
+To address the inherent brittleness and low shear strength of standard hydrogels under extreme kinetic stress, the V2 framework integrates nanocomposite reinforcements into the zwitterionic matrix.
+
+### 4.1 Reinforcement Materials
+*   **Graphene Oxide (GO) Nanosheets:** Introduced to provide immense tensile strength while maintaining a high degree of hydrophilicity. The oxygen-containing functional groups on GO ensure excellent dispersion within the pSBMA/pCBMA matrix.
+*   **Aramid (Kevlar) Nanofibers:** Can be utilized as an alternative or combined reinforcement to drastically improve tear resistance.
+
+### 4.2 Structural Impact
+By creating a *nanocomposite hydrogel*, the material achieves an elastic modulus up to 500% higher than an unreinforced matrix, while only sacrificing < 5% of its overall swelling capacity. This ensures the armor can withstand not just static hydrostatic pressure, but dynamic shear forces from ocean currents and potential physical impacts.

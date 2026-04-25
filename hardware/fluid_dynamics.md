@@ -32,3 +32,12 @@ The deep ocean acts as an infinite, high-capacity heat sink. The remaining therm
 
 ### 4.2 Condensation and Return
 Having transferred its heat to the hydrogel and the ocean, the working fluid cools, condenses, and increases in density. Gravity and capillary action passively draw the cooled fluid back down the network to the base of the KO₂ cartridge, completing the continuous thermal loop without moving parts.
+
+## 5. Predictive Active Cooling Integration (V2)
+While the V1 framework relies entirely on passive thermosiphoning, the integration of predictive telemetry introduces an active cooling fail-safe.
+
+### 5.1 Algorithmic Rate-of-Change Monitoring
+By employing the C++ HUD monitor to track the *rate of change* in the KO₂ core temperature, the system can predict thermal spikes resulting from sudden spikes in metabolic exertion (e.g., rapid, heavy breathing due to panic or physical struggle).
+
+### 5.2 Micro-valve Actuation
+If the predictive algorithm detects that the passive capillary flow will be insufficient to dissipate an impending thermal spike, it can actuate low-power micro-valves within the network. This artificially accelerates the circulation of the Novec 7000 fluid, actively pumping colder fluid from the outer shell to the KO₂ interface *before* critical temperatures are reached.
