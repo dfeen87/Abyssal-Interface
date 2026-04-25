@@ -46,3 +46,7 @@ This document establishes formal Prior Art for the integration of solid-state KO
 
 * **Conceptual Architecture:** The primary conceptualization, cross-domain framework integration (from lunar environments to high-pressure abyssal environments), and structural engineering directives were originated entirely by Don M. Feeney Jr.
 * **AI Computational Assistance:** Chemical stoichiometry formatting, Unicode mathematical structuring, and computational sounding board assistance for this technical note were provided by Gemini, an artificial intelligence developed by Google. The AI functioned strictly as a synthetic assistant to map the architect's engineering directives into formal scientific specifications.
+
+---
+
+https://doi.org/10.5281/zenodo.19771905
